@@ -20,6 +20,7 @@
       <a href="#projects">Projects</a>
       <a href="#focus">Focus</a>
       <a href="#contact">Contact</a>
+      <a href="assets/Aires Neto (CV).pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
   </div>
 </nav>
@@ -28,7 +29,7 @@
       <p class="hero-intro">Aires Neto</p>
       <h1>Senior Full-Stack Engineer</h1>
       <p class="hero-subtitle">
-        I build reliable backend systems, workflow platforms, and production-grade software.
+        I design and ship reliable backend systems, workflow platforms and production-grade software built for real operational environments
       </p>
 
       <div class="hero-links">
@@ -59,33 +60,38 @@
         <h2>Featured Projects</h2>
 
         <div class="project-list">
-          <article class="project-card">
-            <h3>OpsFlow</h3>
-            <p>
-              Workflow and task orchestration platform for internal operations teams with approvals,
-              SLA rules, audit trails, and reporting.
-            </p>
-            <p><strong>Stack:</strong> Django, PostgreSQL, Redis, Celery, HTMX, Docker</p>
-          </article>
 
-          <article class="project-card">
-            <h3>CartScale</h3>
-            <p>
-              Production-style shopping cart and checkout system focused on concurrency,
-              idempotency, stock reservation, and safe state transitions.
-            </p>
-            <p><strong>Stack:</strong> Django, PostgreSQL, Redis, Celery, DRF, Docker</p>
-          </article>
+            <a class="project-card" href="https://github.com/aneto-dev/opsflow" target="_blank" rel="noopener noreferrer">
+              <h3>OpsFlow</h3>
+              <p>
+                Workflow approval engine for internal operations, with ordered approval steps, 
+                decision history, actor-based permissions, and Django Admin tooling.
+              </p>
+              <p><strong>Stack:</strong> Django, SQLite, Django Admin, Service Layer, Django Tests</p>
+              <span class="project-link">View Repository →</span>
+            </a>
 
-          <article class="project-card">
-            <h3>ML Observable Prediction Platform</h3>
-            <p>
-              Architecture-first ML platform exploring drift monitoring, safe rollout, and
-              observable inference for production systems.
-            </p>
-            <p><strong>Stack:</strong> Python, FastAPI, PostgreSQL, Docker, Prometheus, Grafana</p>
-          </article>
-        </div>
+            <a class="project-card" href="https://github.com/aneto-dev/cartscale" target="_blank" rel="noopener noreferrer">
+              <h3>CartScale</h3>
+              <p>
+                Production-style shopping cart and checkout system focused on concurrency,
+                idempotency, stock reservation, and safe state transitions.
+              </p>
+              <p><strong>Stack:</strong> Django, PostgreSQL, Redis, Celery, DRF, Docker</p>
+              <span class="project-link">View Repository →</span>
+            </a>
+
+            <a class="project-card" href="https://github.com/aneto-dev/ml-observable-prediction-platform" target="_blank" rel="noopener noreferrer">
+              <h3>ML Observable Prediction Platform</h3>
+              <p>
+                Architecture-first ML platform exploring drift monitoring, safe rollout,
+                and observable inference for production systems.
+              </p>
+              <p><strong>Stack:</strong> Python, FastAPI, PostgreSQL, Docker, Prometheus, Grafana</p>
+              <span class="project-link">View Repository →</span>
+            </a>
+
+          </div>
       </div>
     </section>
 
