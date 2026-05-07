@@ -13,47 +13,154 @@
 <body>
   <nav class="nav">
   <div class="container nav-container">
-    <a href="#" class="nav-logo">Aires Neto</a>
+    <a href="#" class="nav-logo">AN</a>
 
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#focus">Focus</a>
       <a href="#contact">Contact</a>
-      <a href="assets/Aires Neto (CV).pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="assets/aires-neto-cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
   </div>
 </nav>
-  <header class="hero">
-    <div class="container">
+<header class="hero">
+
+  <div class="container hero-grid">
+
+    <div class="hero-content fade-up">
+
       <p class="hero-intro">Aires Neto</p>
-      <h1>Senior Full-Stack Engineer</h1>
-      <p class="hero-subtitle">
-        I design and ship reliable backend systems, workflow platforms and production-grade software built for real operational environments
+
+      <h1>
+        Senior Full-Stack Engineer
+      </h1>
+
+      <p class="hero-text">
+          I design and build backend systems, APIs, operational
+          platforms that are scalable, observable and built to perform
+          reliably in real production environments.
       </p>
 
-      <div class="hero-links">
-        <a href="https://github.com/aneto-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/aires-neto-2750b2b0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <div class="hero-actions">
+
+        <a href="https://github.com/aneto-dev"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub
+        </a>
+
+        <a href="https://linkedin.com/in/aires-neto-2750b2b0"
+           target="_blank"
+           rel="noopener noreferrer">
+          LinkedIn
+        </a>
+
+        <a href="assets/aires-neto-cv.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+          Resume
+        </a>
+
       </div>
+
+<div class="hero-stats">
+
+  <div class="hero-stat hero-stat-primary">
+    <strong>10+</strong>
+    <span>Years Building Production Software</span>
+  </div>
+
+  <div class="hero-stat">
+    <strong>Backend Systems</strong>
+    <span>APIs · Workflows · Distributed Services</span>
+  </div>
+
+  <div class="hero-stat">
+    <strong>Operational Engineering</strong>
+    <span>Reliability · Observability · Scalability</span>
+  </div>
+
+</div>
+
+</div>
+    <div class="hero-image-wrapper fade-in">
+
+      <div class="hero-glow"></div>
+
+      <img
+        src="assets/profile.png"
+        alt="Aires Neto"
+        class="hero-image"
+      />
+
     </div>
-  </header>
+
+  </div>
+
+</header>
 
   <main>
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I design and ship software built for real operational environments — systems that are
-          reliable under load, observable in production, and safe to evolve over time.
-        </p>
-        <p>
-          My work focuses on backend engineering, workflow platforms, distributed systems, and
-          production-grade APIs with a strong emphasis on reliability, maintainability, and
-          operational clarity.
-        </p>
+  <section id="about" class="about">
+
+  <div class="container about-grid">
+
+    <div class="about-content">
+
+      <h2>About</h2>
+
+      <p>
+        I design and ship software built for real operational environments —
+        systems that are reliable under load, observable in production,
+        and safe to evolve over time.
+      </p>
+
+      <p>
+        My work focuses on backend engineering, distributed systems,
+        platform architecture, and production-grade APIs with a strong
+        emphasis on reliability, maintainability and operational clarity.
+      </p>
+
+    </div>
+
+    <div class="about-panel">
+
+      <div class="tech-stack-icons">
+
+        <img src="assets/icons/python.svg" alt="Python" />
+        <img src="assets/icons/django.svg" alt="Django" />
+        <img src="assets/icons/csharp.svg" alt="C#" />
+        <img src="assets/icons/dotnet.svg" alt=".NET" />
+        <img src="assets/icons/docker.svg" alt="Docker" />
+        <img src="assets/icons/postgresql.svg" alt="PostgreSQL" />
+
       </div>
-    </section>
+
+      <div class="about-panel-item">
+        <span>Primary Stack</span>
+        <strong>Python · Django · C# · .NET</strong>
+      </div>
+
+      <div class="about-panel-item">
+        <span>Infrastructure</span>
+        <strong>Docker · PostgreSQL · Redis · Azure</strong>
+      </div>
+
+      <div class="about-panel-item">
+        <span>Focus</span>
+        <strong>Backend Systems · APIs · Workflows</strong>
+      </div>
+
+      <div class="about-panel-item">
+        <span>Engineering Style</span>
+        <strong>Reliable · Observable · Scalable</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     <section id="projects" class="projects">
       <div class="container">
@@ -62,6 +169,11 @@
         <div class="project-list">
 
             <a class="project-card" href="https://github.com/aneto-dev/opsflow" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="assets/projects/opsflow-preview.png"
+                  alt="OpsFlow Preview"
+                  class="project-image"
+                />
               <h3>OpsFlow</h3>
               <p>
                 Workflow approval engine for internal operations, with ordered approval steps, 
@@ -72,6 +184,11 @@
             </a>
 
             <a class="project-card" href="https://github.com/aneto-dev/cartscale" target="_blank" rel="noopener noreferrer">
+               <!-- <img
+                  src="assets/projects/cartscale-preview.png"
+                  alt="CartScale Preview"
+                  class="project-image"
+                /> -->
               <h3>CartScale</h3>
               <p>
                 Production-style shopping cart and checkout system focused on concurrency,
@@ -82,6 +199,11 @@
             </a>
 
             <a class="project-card" href="https://github.com/aneto-dev/ml-observable-prediction-platform" target="_blank" rel="noopener noreferrer">
+               <!-- <img
+                  src="assets/projects/ml-platform-preview.png"
+                  alt="ML Observable Prediction Platform Preview"
+                  class="project-image"
+                /> -->
               <h3>ML Observable Prediction Platform</h3>
               <p>
                 Architecture-first ML platform exploring drift monitoring, safe rollout,
@@ -96,18 +218,62 @@
     </section>
 
     <section id="focus" class="focus">
-      <div class="container">
-        <h2>Engineering Focus</h2>
-        <ul>
-          <li>Backend systems and APIs</li>
-          <li>Workflow and operational platforms</li>
-          <li>Distributed systems</li>
-          <li>Observability and diagnostics</li>
-          <li>Event-driven architecture</li>
-          <li>Production-grade software</li>
-        </ul>
+
+  <div class="container">
+
+    <h2>Engineering Focus</h2>
+
+    <div class="focus-grid">
+
+      <div class="focus-card">
+        <div class="focus-glow"></div>
+
+        <h3>Backend Systems</h3>
+
+        <p>
+          Designing scalable APIs, transactional workflows,
+          and operational platforms built for production reliability.
+        </p>
       </div>
-    </section>
+
+      <div class="focus-card">
+        <div class="focus-glow"></div>
+
+        <h3>Distributed Architecture</h3>
+
+        <p>
+          Building systems around async processing,
+          state consistency, observability, and safe concurrency.
+        </p>
+      </div>
+
+      <div class="focus-card">
+        <div class="focus-glow"></div>
+
+        <h3>Operational Engineering</h3>
+
+        <p>
+          Creating software that remains maintainable,
+          diagnosable, and resilient under real operational load.
+        </p>
+      </div>
+
+      <div class="focus-card">
+        <div class="focus-glow"></div>
+
+        <h3>Platform Reliability</h3>
+
+        <p>
+          Focusing on auditability, monitoring,
+          fault tolerance, and long-term system evolution.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     <section id="contact" class="contact">
       <div class="container">
