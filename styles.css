@@ -356,6 +356,15 @@ h1 { font-size: clamp(4.2rem, 8vw, 5.8rem); line-height: .92; letter-spacing: -0
   .timeline-date { padding-top: 0; }
 }
 
+.project-tech-icons img,
+.skill-logo img {
+    filter:
+        drop-shadow(0 0 8px rgba(255,255,255,0.08));
+}
+.skill-logo img {
+    object-fit: contain;
+}
+
 @media (max-width: 640px) {
   .section { padding: 28px 0; }
   .hero-section { padding-bottom: 36px; }
