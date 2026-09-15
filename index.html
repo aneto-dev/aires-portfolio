@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="creative.css" />
 </head>
 <body>
   <div class="page-glow page-glow-one"></div>
@@ -35,19 +34,13 @@
   <main>
     <section id="intro" class="hero section" data-section>
       <div class="hero-copy reveal">
-        <p class="eyebrow">Senior Software Engineer / UK</p>
-        <h1>Aires Neto</h1>
-
-        <div class="hero-rotator" aria-live="polite">
-          <span>I work on</span>
-          <strong data-rotating-text>order systems</strong>
-        </div>
-
+        <p class="eyebrow">Senior Software Engineer</p>
+        <h1>Hi, I'm Aires.</h1>
         <p class="hero-lead">
-          10+ years in software. I work mostly in C# and .NET and spend a lot of time where code meets operations: orders, payments, integrations and the edge cases that only show up when real people use a system.
+          I've spent more than 10 years building and supporting software used in day to day operations. My background is mainly C# and .NET with growing work across Python, distributed systems and cloud architecture.
         </p>
         <p class="hero-support">
-          I care about practical architecture, clear boundaries and making production behaviour easy to understand.
+          I like practical architecture, clear boundaries and systems that are easy to understand when something goes wrong in production.
         </p>
 
         <div class="hero-actions">
@@ -63,15 +56,12 @@
         </div>
       </div>
 
-      <aside class="hero-profile reveal delay-1" aria-label="Current work">
+      <aside class="hero-profile reveal delay-1" aria-label="Profile">
         <div class="profile-frame">
           <img src="assets/profile.png" alt="Aires Neto" />
         </div>
-        <div class="profile-details current-build">
-          <div class="current-build-label"><span class="live-dot" aria-hidden="true"></span>Currently building</div>
-          <strong>OrderForge</strong>
-          <p>Security, identity and threat model design</p>
-          <div class="build-next"><span>Next</span><strong>Foundation build</strong></div>
+        <div class="profile-details">
+          <p>Based in the UK</p>
           <div class="profile-links">
             <a href="https://github.com/aneto-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/aires-neto-2750b2b0" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -86,7 +76,7 @@
           <p class="eyebrow">Selected engineering work</p>
           <h2>A few projects that show how I think</h2>
         </div>
-        <p>Some things I've enjoyed building and a closer look at what happens when the happy path stops being enough.</p>
+        <p>Some things I've enjoyed building, from workflow systems to distributed services and production tooling.</p>
       </div>
 
       <article class="flagship-card reveal">
@@ -123,38 +113,11 @@
         </div>
       </article>
 
-      <section class="system-lab reveal" aria-labelledby="system-lab-title">
-        <div class="system-lab-heading">
-          <div>
-            <p class="eyebrow">Inside OrderForge</p>
-            <h3 id="system-lab-title">Follow an order through the system</h3>
-          </div>
-          <p>Pick a part of the flow. The interesting bit is not the boxes. It is what happens between them when things fail, retry or arrive twice.</p>
-        </div>
-
-        <div class="system-lab-layout">
-          <div class="system-map" role="group" aria-label="OrderForge system areas">
-            <button class="system-node active" type="button" data-system-key="ordering">Ordering</button>
-            <button class="system-node" type="button" data-system-key="inventory">Inventory</button>
-            <button class="system-node" type="button" data-system-key="payments">Payments</button>
-            <button class="system-node" type="button" data-system-key="fulfilment">Fulfilment</button>
-            <button class="system-node" type="button" data-system-key="returns">Returns</button>
-          </div>
-
-          <div class="system-detail" aria-live="polite">
-            <p class="system-detail-label" data-system-label>Ordering</p>
-            <h4 data-system-title>Owns the order lifecycle</h4>
-            <p data-system-copy>Coordinates the placement workflow and keeps the customer-facing order state separate from work happening across other parts of the platform.</p>
-            <div class="system-detail-tags" data-system-tags>
-              <span>Process manager</span><span>Outbox</span><span>Order state</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <div class="project-grid">
         <article class="project-card reveal">
-          <div class="project-topline"><span class="status">Python and Django</span></div>
+          <div class="project-topline">
+            <span class="status">Python and Django</span>
+          </div>
           <h3>OpsFlow</h3>
           <p>Workflow approval engine with reusable workflow definitions, ordered decision steps, actor-based access and decision history.</p>
           <div class="project-tags"><span>Python</span><span>Django</span><span>Workflow design</span><span>Audit history</span></div>
@@ -162,7 +125,9 @@
         </article>
 
         <article class="project-card reveal delay-1">
-          <div class="project-topline"><span class="status">Distributed systems</span></div>
+          <div class="project-topline">
+            <span class="status">Distributed systems</span>
+          </div>
           <h3>EventFlow</h3>
           <p>Event-driven .NET system exploring reliable asynchronous processing, transactional outbox, idempotent consumers and operational visibility.</p>
           <div class="project-tags"><span>.NET</span><span>RabbitMQ</span><span>PostgreSQL</span><span>OpenTelemetry</span></div>
@@ -170,7 +135,9 @@
         </article>
 
         <article class="project-card reveal delay-2">
-          <div class="project-topline"><span class="status">Production visibility</span></div>
+          <div class="project-topline">
+            <span class="status">Production visibility</span>
+          </div>
           <h3>.NET Observability API</h3>
           <p>ASP.NET Core project focused on traces, metrics, structured logs and the diagnostics needed to understand behaviour in production.</p>
           <div class="project-tags"><span>.NET</span><span>OpenTelemetry</span><span>Prometheus</span><span>Grafana</span><span>Loki</span></div>
@@ -187,23 +154,24 @@
         </div>
       </div>
 
-      <div class="about-intro reveal">
-        <p>Most of my professional work has been on business-critical systems where a small change can reach customers, payments and operational teams. That has made me fairly suspicious of architecture that only works on a diagram.</p>
-      </div>
-
-      <div class="method-lab reveal delay-1">
-        <div class="method-tabs" role="tablist" aria-label="How I approach engineering work">
-          <button class="method-tab active" type="button" data-method-key="problem" aria-pressed="true"><span>01</span>Start with the problem</button>
-          <button class="method-tab" type="button" data-method-key="boundaries" aria-pressed="false"><span>02</span>Find the boundaries</button>
-          <button class="method-tab" type="button" data-method-key="failure" aria-pressed="false"><span>03</span>Plan for failure</button>
-          <button class="method-tab" type="button" data-method-key="visible" aria-pressed="false"><span>04</span>Make it visible</button>
-          <button class="method-tab" type="button" data-method-key="safe" aria-pressed="false"><span>05</span>Ship it safely</button>
+      <div class="about-layout">
+        <div class="about-copy reveal">
+          <p>
+            Most of my professional work has been around business-critical systems where a small code change can affect orders, payments, customer service workflows or operational teams. That has shaped the way I approach software.
+          </p>
+          <p>
+            I like understanding the business rules first then deciding where complexity belongs. I prefer designs that are easy to explain, test and support rather than architecture that exists to look impressive on a diagram.
+          </p>
+          <p>
+            I am currently going deeper into distributed systems, domain-driven design, cloud architecture and AI engineering while continuing to build on a long background in .NET systems.
+          </p>
         </div>
 
-        <div class="method-detail" aria-live="polite">
-          <p data-method-kicker>01 / Problem first</p>
-          <h3 data-method-title>Understand what the system actually needs to do</h3>
-          <p data-method-copy>Before choosing patterns or technology, I want the business rule, the awkward cases and who gets hurt when it goes wrong.</p>
+        <div class="principles reveal delay-1">
+          <article><span>01</span><div><strong>Start with the problem</strong><p>Technology should earn its place by solving something real.</p></div></article>
+          <article><span>02</span><div><strong>Design for failure</strong><p>Retries, duplicates and partial failures are part of the system.</p></div></article>
+          <article><span>03</span><div><strong>Make behaviour visible</strong><p>Logs, traces and metrics should help answer useful questions.</p></div></article>
+          <article><span>04</span><div><strong>Keep change safe</strong><p>Good boundaries and tests should make the next change easier.</p></div></article>
         </div>
       </div>
     </section>
@@ -217,25 +185,53 @@
       </div>
 
       <div class="stack-grid">
-        <article class="stack-card reveal"><p>Backend</p><h3>C# / .NET</h3><span>ASP.NET Core, MVC, EF Core, REST APIs, background processing</span></article>
-        <article class="stack-card reveal delay-1"><p>Python</p><h3>Django / FastAPI</h3><span>Workflow applications, APIs, automation and data-oriented services</span></article>
-        <article class="stack-card reveal delay-2"><p>Data and messaging</p><h3>SQL / PostgreSQL / Redis</h3><span>SQL Server, PostgreSQL, RabbitMQ, caching and persistence design</span></article>
-        <article class="stack-card reveal"><p>Frontend</p><h3>TypeScript / Next.js / Vue</h3><span>Operational interfaces and product-facing web applications</span></article>
-        <article class="stack-card reveal delay-1"><p>Cloud and delivery</p><h3>Azure / Docker / CI/CD</h3><span>App Service, deployment pipelines, containers and release workflows</span></article>
-        <article class="stack-card reveal delay-2"><p>Observability</p><h3>OpenTelemetry / Grafana</h3><span>Prometheus, Loki, Elasticsearch, Kibana and structured logging</span></article>
+        <article class="stack-card reveal">
+          <p>Backend</p>
+          <h3>C# / .NET</h3>
+          <span>ASP.NET Core, MVC, EF Core, REST APIs, background processing</span>
+        </article>
+        <article class="stack-card reveal delay-1">
+          <p>Python</p>
+          <h3>Django / FastAPI</h3>
+          <span>Workflow applications, APIs, automation and data-oriented services</span>
+        </article>
+        <article class="stack-card reveal delay-2">
+          <p>Data and messaging</p>
+          <h3>SQL / PostgreSQL / Redis</h3>
+          <span>SQL Server, PostgreSQL, RabbitMQ, caching and persistence design</span>
+        </article>
+        <article class="stack-card reveal">
+          <p>Frontend</p>
+          <h3>TypeScript / Next.js / Vue</h3>
+          <span>Operational interfaces and product-facing web applications</span>
+        </article>
+        <article class="stack-card reveal delay-1">
+          <p>Cloud and delivery</p>
+          <h3>Azure / Docker / CI/CD</h3>
+          <span>App Service, deployment pipelines, containers and release workflows</span>
+        </article>
+        <article class="stack-card reveal delay-2">
+          <p>Observability</p>
+          <h3>OpenTelemetry / Grafana</h3>
+          <span>Prometheus, Loki, Elasticsearch, Kibana and structured logging</span>
+        </article>
       </div>
     </section>
 
     <section id="experience" class="section" data-section>
       <div class="section-heading compact reveal">
-        <div><p class="eyebrow">Career</p><h2>Experience</h2></div>
+        <div>
+          <p class="eyebrow">Career</p>
+          <h2>Experience</h2>
+        </div>
       </div>
 
       <div class="experience-list">
         <article class="experience-item reveal">
           <div class="experience-date">2022 - Present</div>
           <div class="experience-content">
-            <h3>Senior Software Developer</h3><p class="company">Tredz Ltd.</p>
+            <h3>Senior Software Developer</h3>
+            <p class="company">Tredz Ltd.</p>
             <p>Working across order management, internal platforms, APIs, integrations and production support. Current work includes modernising existing systems while introducing clearer domain boundaries, stronger operational tooling and better observability.</p>
             <div class="project-tags"><span>.NET</span><span>SQL Server</span><span>Azure</span><span>Vue</span><span>Observability</span></div>
           </div>
@@ -244,7 +240,8 @@
         <article class="experience-item reveal">
           <div class="experience-date">2020 - 2022</div>
           <div class="experience-content">
-            <h3>Senior Software Developer</h3><p class="company">Questgates Ltd.</p>
+            <h3>Senior Software Developer</h3>
+            <p class="company">Questgates Ltd.</p>
             <p>Modernised .NET services, delivered REST APIs for claims workflows and improved maintainability through stronger testing and engineering practices.</p>
             <div class="project-tags"><span>.NET Core</span><span>REST APIs</span><span>SQL Server</span><span>Azure DevOps</span><span>xUnit</span></div>
           </div>
@@ -253,7 +250,8 @@
         <article class="experience-item reveal">
           <div class="experience-date">2015 - 2020</div>
           <div class="experience-content">
-            <h3>Web Developer</h3><p class="company">Kite Packaging</p>
+            <h3>Web Developer</h3>
+            <p class="company">Kite Packaging</p>
             <p>Built customer-facing and internal web applications using .NET, MVC and JavaScript frameworks with automated testing and cross-browser validation.</p>
             <div class="project-tags"><span>.NET MVC</span><span>Angular</span><span>SQL Server</span><span>Selenium</span></div>
           </div>
