@@ -1,0 +1,28 @@
+.hero h1::after {
+  content: "";
+  display: inline-block;
+  width: 0.075em;
+  height: 0.82em;
+  margin-left: 0.09em;
+  border-radius: 2px;
+  background: var(--accent);
+  vertical-align: -0.05em;
+  animation: intro-cursor-blink 0.95s steps(1, end) infinite;
+}
+
+@keyframes intro-cursor-blink {
+  0%, 46% {
+    opacity: 1;
+  }
+
+  47%, 100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero h1::after {
+    animation: none;
+    opacity: 1;
+  }
+}
