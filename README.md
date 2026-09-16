@@ -8,7 +8,7 @@ The site is intentionally kept as a lightweight static build so the engineering 
 
 The portfolio is being rebuilt around a smaller number of deeper projects that show architecture, implementation, testing, observability and delivery rather than a large collection of small demos.
 
-The current flagship project is **OrderForge**, a distributed commerce and fulfilment platform being developed in stages.
+The current flagship project is **Switchyard**, a distributed commerce and fulfilment platform being developed in stages.
 
 Supporting projects currently include:
 
